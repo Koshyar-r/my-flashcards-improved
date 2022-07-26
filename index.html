@@ -19,7 +19,7 @@
                     <p class="total-flashcards"><strong>1895</strong> : تعداد کل</p>
                     <p class="todays-flashcards"><strong>40</strong> : فلش کارت های امروز </p>
                     <hr>
-                    <button class="settings-button"><i class="fa-solid fa-gear settings-icon"></i> تنظیمات</button>
+                    <button class="settings-button" onclick="ShowModal()"><i class="fa-solid fa-gear settings-icon"></i> تنظیمات</button>
                 </div>
             </div>
             <div class="flashcard">
@@ -28,7 +28,7 @@
                     <p class="total-flashcards"><strong>1008</strong> : تعداد کل</p>
                     <p class="todays-flashcards"><strong>50</strong> : فلش کارت های امروز </p>
                     <hr>
-                    <button class="settings-button"><i class="fa-solid fa-gear settings-icon"></i> تنظیمات</button>
+                    <button class="settings-button" onclick="ShowModal()"><i class="fa-solid fa-gear settings-icon"></i> تنظیمات</button>
                 </div>
             </div>
             <div class="flashcard">
@@ -37,7 +37,7 @@
                     <p class="total-flashcards"><strong>1884</strong> : تعداد کل</p>
                     <p class="todays-flashcards"><strong>225</strong> : فلش کارت های امروز </p>
                     <hr>
-                    <button class="settings-button"><i class="fa-solid fa-gear settings-icon"></i> تنظیمات</button>
+                    <button class="settings-button" onclick="ShowModal()"><i class="fa-solid fa-gear settings-icon"></i> تنظیمات</button>
                 </div>
             </div>
             <div class="flashcard">
@@ -46,7 +46,7 @@
                     <p class="total-flashcards"><strong>262</strong> : تعداد کل</p>
                     <p class="todays-flashcards"><strong>262</strong> : فلش کارت های امروز </p>
                     <hr>
-                    <button class="settings-button"><i class="fa-solid fa-gear settings-icon"></i> تنظیمات</button>
+                    <button class="settings-button" onclick="ShowModal()"><i class="fa-solid fa-gear settings-icon"></i> تنظیمات</button>
                 </div>
             </div>
             <div class="flashcard">
@@ -55,15 +55,15 @@
                     <p class="total-flashcards"><strong>96</strong> : تعداد کل</p>
                     <p class="todays-flashcards"><strong>20</strong> : فلش کارت های امروز </p>
                     <hr>
-                    <button class="settings-button"><i class="fa-solid fa-gear settings-icon"></i> تنظیمات</button>
+                    <button class="settings-button" onclick="ShowModal()"><i class="fa-solid fa-gear settings-icon"></i> تنظیمات</button>
                 </div>
             </div>
         </div>
     </div>
 
 
-    <div class="modal">
-        <i class="fa-solid fa-xmark close"></i>
+    <div class="modal" id="modal">
+        <i class="fa-solid fa-xmark close" onclick="CloseModal()"></i>
             <div class="modal-content">
                 <p class="modal-text">به صورت پیشفرض ما ۲۰۰ عدد فلش‌کارت برای شما در نظر گرفتیم شما میتوانید این مقدار را به صورت دلخواه تغییر دهید</p>
                     <div class="counters">

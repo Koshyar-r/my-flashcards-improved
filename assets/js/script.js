@@ -1,19 +1,13 @@
-// const navMenu = document.getElementById('nav-menu'),
-//       navToggle = document.getElementById('nav-toggle'),
-//       navClose = document.getElementById('nav-close')
+const Modal = document.getElementById('modal')
+const Close = document.getElementById('close')
 
+function ShowModal() {
+    Modal.style.display = "inline"
+}
 
-// if(navToggle){
-//     navToggle.addEventListener('click', () =>{
-//         navMenu.classList.add('show-modal')
-//     })
-// }
-
-// if(navClose){
-//     navClose.addEventListener('click', () =>{
-//         navMenu.classList.remove('show-modal')
-//     })
-// }
+function CloseModal() {
+    Modal.style.display = "none"
+}
 
 let Numbers = document.getElementById("box")
 for(i = 0 ; i < 1000 ; i++) {

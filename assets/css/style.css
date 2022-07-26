@@ -38,9 +38,8 @@ body {
 }
 .container {
     padding-top: 2.5rem;
-    display: none;
 }
-.counterent {
+.content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     place-items: center;
@@ -105,14 +104,16 @@ hr {
     cursor: pointer;
 }
 .modal {
-    background-color: #FFF;
+    display: none;
+    background-color: #e5e5e5;
     border-radius: 3px;
     padding: 2rem;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 500px;
+    width: 600px;
+    transition: 0.5s;
 }
 .modal-content {
     padding-top: 2.5rem;
@@ -134,10 +135,21 @@ hr {
     border-radius: 5px;
     padding: 1rem;
     cursor: pointer;
+    transition: .5s;
+}
+.save-button:hover {
+    background-color: var(--secondary-color);
 }
 .counters {
     display: flex;
     justify-content: space-between;
+}
+.first-counter, .second-counter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .8rem;
 }
 .counter {
     margin-bottom: 1.5rem;
@@ -221,11 +233,19 @@ hr {
     .flashcard {
         width: 70vw;
     }
-    .counterent {
+    .modal {
+        width: 90vw;
+    }
+    .counters {
+        display: flex;
+        flex-direction: column;
+    }
+    .first-counter, .second-counter {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        gap: .8rem;
     }
 }
 @media (min-width: 651px) and (max-width: 1074px) {
