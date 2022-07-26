@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://kit.fontawesome.com/d51f589380.js"></script>
+    <title>Flashcard Decks</title>
+</head>
+<body>
+    <h1 class="title">فلش‌کارت‌های من</h1>
+
+    <div class="container">
+        <div class="content">
+            <div class="flashcard">
+                <h3 class="flashcard-title">فلش کارت های دوره رایگان</h3>
+                <div class="info">
+                    <p class="total-flashcards"><strong>1895</strong> : تعداد کل</p>
+                    <p class="todays-flashcards"><strong>40</strong> : فلش کارت های امروز </p>
+                    <hr>
+                    <button class="settings-button"><i class="fa-solid fa-gear settings-icon"></i> تنظیمات</button>
+                </div>
+            </div>
+            <div class="flashcard">
+                <h3 class="flashcard-title">فلش کارت های شنیدن صدا</h3>
+                <div class="info">
+                    <p class="total-flashcards"><strong>1008</strong> : تعداد کل</p>
+                    <p class="todays-flashcards"><strong>50</strong> : فلش کارت های امروز </p>
+                    <hr>
+                    <button class="settings-button"><i class="fa-solid fa-gear settings-icon"></i> تنظیمات</button>
+                </div>
+            </div>
+            <div class="flashcard">
+                <h3 class="flashcard-title">فلش کارت های 625 کلمه</h3>
+                <div class="info">
+                    <p class="total-flashcards"><strong>1884</strong> : تعداد کل</p>
+                    <p class="todays-flashcards"><strong>225</strong> : فلش کارت های امروز </p>
+                    <hr>
+                    <button class="settings-button"><i class="fa-solid fa-gear settings-icon"></i> تنظیمات</button>
+                </div>
+            </div>
+            <div class="flashcard">
+                <h3 class="flashcard-title">فلش کارت های املا و تلفظ</h3>
+                <div class="info">
+                    <p class="total-flashcards"><strong>262</strong> : تعداد کل</p>
+                    <p class="todays-flashcards"><strong>262</strong> : فلش کارت های امروز </p>
+                    <hr>
+                    <button class="settings-button"><i class="fa-solid fa-gear settings-icon"></i> تنظیمات</button>
+                </div>
+            </div>
+            <div class="flashcard">
+                <h3 class="flashcard-title">فلش کارت های تلفظ</h3>
+                <div class="info">
+                    <p class="total-flashcards"><strong>96</strong> : تعداد کل</p>
+                    <p class="todays-flashcards"><strong>20</strong> : فلش کارت های امروز </p>
+                    <hr>
+                    <button class="settings-button"><i class="fa-solid fa-gear settings-icon"></i> تنظیمات</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal">
+        <i class="fa-solid fa-xmark close"></i>
+            <div class="modal-content">
+                <p class="modal-text">به صورت پیشفرض ما ۲۰۰ عدد فلش‌کارت برای شما در نظر گرفتیم شما میتوانید این مقدار را به صورت دلخواه تغییر دهید</p>
+                    <div class="counters">
+                        <div class="first-counter">
+                            <p class="new-flashcards-text">تعداد فلش کارت‌های جدید</p>
+                            <div class="counter">
+                                <span class="next" onclick="NextNum()"></span>
+                                <span class="prev" onclick="PrevNum()"></span>
+                                <div id="box"></div>
+                            </div>
+                        </div>
+                        <div class="second-counter">
+                            <p class="old-flashcards-text">تعداد فلش کارت‌های تکراری</p>
+                            <div class="counter">
+                                <span class="next" onclick="SecondNextNum()"></span>
+                                <span class="prev" onclick="SecondPrevNum()"></span>
+                                <div id="second-box"></div>
+                            </div>
+                        </div>
+                    </div>
+                <button class="save-button">ذخیره</button>
+            </div>
+    </div>
+
+    <!-- <button class="button">راهنمای مرور فلش کارتها</button> -->
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
