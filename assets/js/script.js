@@ -1,4 +1,4 @@
-const Modal = document.getElementById('modal')
+const Modal = document.getElementById('fluent__modal')
 const Close = document.getElementById('close')
 
 function ShowModal() {
@@ -9,45 +9,34 @@ function CloseModal() {
     Modal.style.display = "none"
 }
 
-let Numbers = document.getElementById("box")
-for(i = 0 ; i < 1000 ; i++) {
-    let span = document.createElement('span')
-    span.textContent = i
-    Numbers.appendChild(span)
-}
-let Num = Numbers.getElementsByTagName('span')
-let index = 0
+const Input = document.getElementById("stepper-input")
 
-function NextNum() {
-    Num[index].style.display = 'none'
-    index = (index + 1) % Num.length
-    Num[index].style.display = 'initial'
-}
+function stepper(btn) {
+    let id = btn.getAttribute("id")
+    let min = Input.getAttribute("min")
+    let max = Input.getAttribute("max")
+    let step = Input.getAttribute("step")
+    let val = Input.getAttribute("value")
+    let CalcStep = (id == "increment") ? (step * 1) : (step * -1)
+    let newValue = parseInt(val) + CalcStep
 
-function PrevNum() {
-    Num[index].style.display = 'none'
-    index = (index - 1 + Num.length) % Num.length
-    Num[index].style.display = 'initial'
+    if(newValue >= min && newValue <= max) {
+        Input.setAttribute("value", newValue)
+    }
 }
 
-let SecondNumbers = document.getElementById("second-box")
-for(j = 0 ; j < 1000 ; j++) {
-    let span = document.createElement('span')
-    span.textContent = j
-    SecondNumbers.appendChild(span)
-}
+const SecondInput = document.getElementById("second__stepper-input")
 
-let SecondNum = SecondNumbers.getElementsByTagName('span')
-let secondindex = 0
+function secondstepper(btn) {
+    let id = btn.getAttribute("id")
+    let min = SecondInput.getAttribute("min")
+    let max = SecondInput.getAttribute("max")
+    let step = SecondInput.getAttribute("step")
+    let val = SecondInput.getAttribute("value")
+    let CalcStep = (id == "increment") ? (step * 1) : (step * -1)
+    let newValue = parseInt(val) + CalcStep
 
-function SecondNextNum() {
-    SecondNum[secondindex].style.display = 'none'
-    secondindex = (secondindex + 1) % SecondNum.length
-    SecondNum[secondindex].style.display = 'initial'
-}
-
-function SecondPrevNum() {
-    SecondNum[secondindex].style.display = 'none'
-    secondindex = (secondindex - 1 + SecondNum.length) % SecondNum.length
-    SecondNum[secondindex].style.display = 'initial'
+    if(newValue >= min && newValue <= max) {
+        SecondInput.setAttribute("value", newValue)
+    }
 }
