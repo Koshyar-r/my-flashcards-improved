@@ -269,11 +269,11 @@ input::-webkit-outer-spin-button {
         flex-direction: column;
     }
     .fluent__flashcard {
-        width: 85vw;
+        width: 86vw;
         height: 420px;
     }
     .fluent__title {
-        font-size: 4vw;
+        font-size: 4.1vw;
     }
     .start__btn {
         width: 25vw;
@@ -317,11 +317,11 @@ input::-webkit-outer-spin-button {
 }
 @media (min-width: 651px) and (max-width: 1174px) {
     .fluent__flashcard {
-        width: 40vw;
+        width: 44vw;
         height: 450px;
     }
     .fluent__title {
-        font-size: 1.9vw;
+        font-size: 2vw;
     }
     .start__btn {
         width: 15vw;
