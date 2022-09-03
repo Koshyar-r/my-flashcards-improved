@@ -47,18 +47,19 @@ body {
 .fluent__flashcard {
     position: relative;
     background-color: #FFF;
-    width: 550px;
-    height: 380px;
+    width: 500px;
+    height: 400px;
     border-radius: 25px;
     padding: 2rem;
     display: flex;
     align-items: center;
     flex-direction: column;
     text-align: center;
-    gap: 1.5rem;
+    gap: 3rem;
 }
 .fluent__title {
     color: var(--primary-color);
+    font-size: 1.5rem;
 }
 .start__btn {
     display: flex;
@@ -268,18 +269,18 @@ input::-webkit-outer-spin-button {
         flex-direction: column;
     }
     .fluent__flashcard {
-        width: 90vw;
-        height: 390px;
+        width: 85vw;
+        height: 420px;
     }
     .fluent__title {
-        font-size: 6vw;
+        font-size: 4vw;
     }
     .start__btn {
-        width: 30vw;
-        font-size: 3.2vw;
+        width: 25vw;
+        font-size: 2.5vw;
     }
     .fluent__info {
-        font-size: 4vw;
+        font-size: 3.2vw;
     }
     .plus__button-wrapper .icon .tooltip {
         transition: .5s;
@@ -317,14 +318,16 @@ input::-webkit-outer-spin-button {
 @media (min-width: 651px) and (max-width: 1174px) {
     .fluent__flashcard {
         width: 40vw;
+        height: 450px;
     }
     .fluent__title {
-        font-size: 2.5vw;
+        font-size: 1.9vw;
     }
     .start__btn {
-        width: 20vw;
+        width: 15vw;
+        font-size: 1.5vw;
     }
     .fluent__info {
-        font-size: 2vw;
+        font-size: 1.5vw;
     }
 }
